@@ -19,8 +19,7 @@ let track_index = 0;
 let isPlaying = false;
 let isRandom = false;
 let updateTimer;
-
-const music_list = [
+ music_list = [
   {
     img: "assets/images/Diljit.jpg",
     name: "Born To Shine",
@@ -86,7 +85,7 @@ function reset() {
   total_duration.textContent = "00:00";
   seek_slider.value = 0;
 }
-function randomTrack() {
+functio randomTrack() {
   isRandom ? pauseRandom() : playRandom();
 }
 
@@ -161,7 +160,7 @@ function setUpdate() {
     seek_slider.value = seekPosition;
 
     let currentMinutes = Math.floor(curr_track.currentTime / 60);
-    let currentSeconds = Math.floor(
+    currentSeconds = Math.floor(
       curr_track.currentTime - currentMinutes * 60
     );
 
